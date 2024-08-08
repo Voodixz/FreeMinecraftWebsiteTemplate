@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OriginsNW</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>/* Highlight span styling */
+        .highlight a {
+            text-decoration: none; /* Remove underline */
+            color: #007BFF; /* Set link color */
+        }
+        
+        /* Additional styling for .highlight if needed */
+        .highlight {
+            font-weight: bold; /* Example: apply bold styling to highlight class */
+        }
+        </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="scrolling-text">
+            DUYURU! EĞER YAPAMADIĞINIZ BİR ŞEY OLURSA DİSCORD ADRESİMİZDEN İLETİŞİME GEÇİNİZ!
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo"> <!-- Replace with your logo path -->
+        </div>
+        <!--Eğer Logoları Değiştirmek İsterseniz Font Awesome websitesinden Değiştirebilirsiniz!-->
+        <ul class="nav-links">
+            <li><a href="https://orichat.rf.gd" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comment"></i></a></li>
+            <li><a href="https://discord.gg/qG8VFazB" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-discord"></i> 
+            </a></li>            
+        </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Sunucu İsmi</h1>
+            <h2>Sunucu Sloganı</h2>
+            <p>
+                <span class="highlight">
+                    <a href="https://minecraftbilgi.com/minecraft-survival-nedir/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-heart"></i> SURVIVAL
+                    </a>
+                </span>
+            </p>
+            <p>
+                <span class="highlight">
+                    <a href="https://www.rabisu.com/blog/minecraft-skyblock-server-nedir-nasil-oynanir/#:~:text=Minecraft%20Skyblock%2C%20Minecraft%20oyuncular%C4%B1na%20benzersiz,ve%20%C3%A7e%C5%9Fitli%20meydan%20okumalar%C4%B1%20tamamlamakt%C4%B1r." target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i> SKYBLOCK
+                    </a>
+                </span>
+            </p>
+            <button class="cta-button" onclick="copyText('sunucu.ipsi')"><i class="fa-solid fa-clipboard"></i> Sunucu Adresi!</button>
+            <p class="player-info">ANLIK 5+ AKTİF OYUNCU</p>
+            <p>IP: sunucu.ipsi</p>
+        </div>
+    </section>
+
+   <!-- Kopyalama Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <div class="popup-checkmark">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13l4 4L19 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <p class="popup-success">Başarılı!</p>
+        <p class="popup-message">Sunucu adresi kopyalandı!</p>
+        <button class="popup-button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
